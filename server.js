@@ -149,7 +149,7 @@ onSnapshot(collection(bygreenDb, 'users'), (data)=>{
         data.docs.forEach(doc=>{
             docs.push({...doc.data(), id: doc.id})
         })
-        console.log(docs)
+        // console.log(docs)
         // make account on the rest projects db; by the same id; 
     })
 
