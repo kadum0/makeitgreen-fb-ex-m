@@ -1,0 +1,155 @@
+
+/* basic */
+/* hdeader */
+header,
+footer {
+    height: 15vh;
+    background: #68C451;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+    /* background: green; */
+    background: url('../imgs/makeitgreen-logo.jpg');
+    background-size: contain;
+}
+
+
+
+/* main */
+
+main{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    /* background: rgb(228, 228, 228); */
+    background: #141414;
+    color: white;
+}
+
+main img{
+    /* background: url('./makeitgreen-logo.jpg'); */
+    height: 6rem;
+    /* width:3rem; */
+}
+
+#donors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70vw;
+}
+.donor {
+    height: 35vh;
+    width: 35vh;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: .1s linear;
+    background: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+.donor:hover{
+    border: 4px solid #68C451;
+}
+
+/* footer */
+
+
+footer {
+    height: 20vh;
+    background: #68C451;
+}
+
+.contact {
+    height: 90%;
+    width: 40%;
+    /* background: white; */
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.contact img {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.contentLinks {
+    /* background: red; */
+}
+
+.contentLinks a {
+    text-decoration: none;
+    background: #4d883e;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: .4rem;
+    /* box-sizing: 1rem; */
+    transition: .2s linear;
+}
+
+.contentLinks a:hover {
+    background: #292e27;
+}
+
+
+
+/* shared */
+
+/* absolute elements */
+
+body{
+    margin: 0%;
+    font-family: enfont;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    font-size: 2rem;
+}
+
+
+@font-face {
+    /* font-family: "enfont"; */
+    font-family: enfont;
+    src: url('../fonts/en/TradeGothicLTStd-BdCn20.woff');
+    /* src: url('../public/fonts/en/TradeGothicLTStd-BdCn20.woff'); */
+}
+
+
+@font-face {
+    /* font-family: "enfont"; */
+    font-family: senfont;
+    src: url('../fonts/en/TradeGothicLTStd-Cn18.woff');
+}
+
+
+

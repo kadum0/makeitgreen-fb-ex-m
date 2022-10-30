@@ -1,0 +1,43 @@
+
+
+    /* header */
+    /* main */
+    body {
+        margin: 0%;
+        font-family: enfont;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 4rem;
+    }
+
+    img {
+        height: 40vh;
+        width: 100%;
+        background: url('<%= articleData.img %>');
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* footer */
+
+    /* shared */
+    /* absolute elements */
+
+    @font-face {
+        /* font-family: "enfont"; */
+        font-family: enfont;
+        src: url('../fonts/en/TradeGothicLTStd-BdCn20.woff');
+    }
+
+
+    @font-face {
+        /* font-family: "enfont"; */
+        font-family: senfont;
+        src: url('../fonts/en/TradeGothicLTStd-Cn18.woff');
+    }
+

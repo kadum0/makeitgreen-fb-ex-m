@@ -1,0 +1,205 @@
+
+/* basic */
+/* header */
+
+header,
+footer {
+    height: 15vh;
+    background: #68C451;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+    /* background: green; */
+    background: url('../imgs/makeitgreen-logo.jpg');
+    background-size: contain;
+}
+
+
+/* main */
+
+#articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    gap: 2rem;
+    color: white;
+}
+.article{
+    height: 50vh;
+    width: 45vh;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 0px 0px #68C451;
+    transition: .1s linear;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* padding: 1rem; */
+    position: relative;
+}
+.article button{
+    font-family: enfont;
+    font-size: 1.4rem;
+    background: #68C451;
+    background: #49a034;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .1s linear;
+    position: absolute;
+    right: 1rem;
+}
+.article button:hover{
+    background: #68C451;
+}
+.article>div{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    background: red; */
+    text-align: center;
+}
+.title{
+    line-height: 0rem;
+}
+.article:hover{
+    box-shadow: 8px 8px 0px 0px #68C451;
+}
+.article-img{
+    /* min-height: 70%;
+    min-width: 100%; */
+    flex-grow: 3fr;
+    /* min-height: 5rem; */
+    height: 60%;
+    width: 100%;
+    background-position: center;
+    /* background-size: contain; */
+    background-size: cover;
+    /* background: red; */
+}
+.article .content{
+
+}
+
+/* footer */
+
+
+footer {
+    height: 20vh;
+    background: #68C451;
+}
+
+.contact {
+    height: 90%;
+    width: 40%;
+    /* background: white; */
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.contact img {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.contentLinks {
+    /* background: red; */
+}
+
+.contentLinks a {
+    text-decoration: none;
+    background: #4d883e;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: .4rem;
+    /* box-sizing: 1rem; */
+    transition: .2s linear;
+}
+
+.contentLinks a:hover {
+    background: #292e27;
+}
+
+
+/* shared */
+
+
+
+/* absolute elements */
+
+body{
+    margin: 0%;
+    min-height: 100vh;
+    background: rgb(48, 48, 48);
+    background: #141414;
+    font-family: enfont;
+}
+a{
+    text-decoration: none;
+    color: black;
+    /* overflow: hidden; */
+}
+
+/* article */
+    /* main */
+
+    #articlePage{
+        display: none;
+        color: white;
+    }
+    #articlePage main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 4rem;
+    }
+
+    #articlePage img {
+        height: 40vh;
+        width: 100%;
+        background: url('<%= articleData.img %>');
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+
+
+
+@font-face {
+    /* font-family: "enfont"; */
+    font-family: enfont;
+    src: url('../fonts/en/TradeGothicLTStd-BdCn20.woff');
+    /* src: url('../public/fonts/en/TradeGothicLTStd-BdCn20.woff'); */
+}
+
+
+@font-face {
+    /* font-family: "enfont"; */
+    font-family: senfont;
+    src: url('../fonts/en/TradeGothicLTStd-Cn18.woff');
+}
+
+
+

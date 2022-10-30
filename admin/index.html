@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+
+<body>
+    <div class="logged">
+        <header>
+            <div class="logo"></div>
+            <div class="contentLinks">
+                <a href="/https://bygreen-v.herokuapp.com">map project</a>
+                <a href="/donors">donors</a>
+                <a href="/blog">blog</a>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="blog-making">
+                <h2>make post (article) </h2>
+                <input type="text" placeholder="title" id="articleTitle">
+                <input type="file" id="articleImg">
+                <textarea name="" cols="30" rows="10" placeholder="..." id="articleContent"></textarea>
+                <button id="sendArticle" class="send">send article</button>
+            </div>
+
+
+            <div class="donor-making">
+                <h2>add donor </h2>
+                <input type="text" placeholder="donor name" id="donorName">
+                <input type="text" placeholder="donor website" id="donorWebsite">
+                <input type="file" placeholder="donor logo" id="donorLogo">
+                <!-- <select name="" id="">
+                    <option value="">partner</option>
+                    <option value="">donor</option>
+                </select> -->
+                <button id="sendDonor" class="send">send donor</button>
+            </div>
+        </main>
+        <footer>
+            <div class="contact">
+                <a href="https://www.instagram.com/makeitgreeniq/"><img src="../imgs/instagram-colourful-icon.png"
+                        alt=""></a>
+                email: makeitgreeniq@gmail.com
+            </div>
+
+        </footer>
+
+    </div>
+
+    <div class="notlogged">
+        <input type="text" id="em">
+        <input type="text" id="pw">
+        <button id="signin"> sign in</button>
+    </div>
+
+
+
+    <script src="./admin.js" type="module"></script>
+</body>
+
+</html>
